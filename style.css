@@ -2,9 +2,38 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway|Roboto|Ubuntu&display=swap');
 
 
-/* DEFAULT MOBILE STYLES */
+/* DEFAULT THEME STYLES */
+section p{
+    margin: 10px 0  10px auto;
+    padding: 0 15px 0 15px;
+}
+
+a{
+    color: #f4f6f4;
+}
+
+a:hover{
+    color: burlywood;
+}
+
+header{
+    background-image: url('img/header\ banner.jpg');
+}
+
+footer{
+    padding: 10px;
+    background-image: url('img/header\ banner.jpg');
+}
+
+/* fixing all images */
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
 
 /*******************
+Mobile tyles started
     NAVIGATION
 ********************/
 nav ul {
@@ -12,6 +41,7 @@ nav ul {
     list-style-type: none;
     flex-flow: wrap;
     flex-direction: column;
+    
 }
 nav ul{
     align-items: center;
@@ -22,6 +52,11 @@ nav ul li{
     margin-right: 30px;
     font-family: 'Raleway', sans-serif;
     font-size: 1.1em;
+    color: #f4f6f4;
+}
+
+nav ul li:last-child{
+    margin-bottom: 15px;
 }
 
 /* Logo */
@@ -40,7 +75,7 @@ nav ul li:first-child{
 }
 
 section{
-    background-color: burlywood;
+    background-color: rgba(239, 243, 214, 0.795);
     padding: 10px;
     font-family: 'Roboto', sans-serif;
     font-size: 1.2em;
@@ -54,8 +89,14 @@ section h3{
     color: brown;
 }
 
+/*********** INDEX PAGE*************/
 
 
+/* 
+.biography img{
+    height: 300px;
+    width: 450px;
+} */
 
 
 
@@ -128,6 +169,36 @@ footer p{
     margin-right: auto;
 }
 
+.body-container{
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-areas: "i i i"
+                        "o o o"
+                        "p p p"
+                        "q q q";
+}
+
+.body-container section:first-child{
+    grid-area: i;
+}
+
+.body-container section:nth-child(2){
+    grid-area: o;
+}
+
+
+/* .body-container section:nth-child(2) {
+} */
+
+.body-container section:nth-child(3){
+    grid-area: p;
+}
+
+.body-container section:nth-child(4){
+    grid-area: q;
+}
+
 }
 
 
@@ -155,16 +226,41 @@ footer p{
 
 
 
+/************************
+    Portfolio images
+*************************/
+.gallery{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 
+}
 
+.gallery {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .gallery__card {
+    width: 250px;
+    height: 150px;
+    margin: 10px;
+  background-color: lightgrey;
+    /* background-color: var(--light-bg); */
+    border: 2px solid #000;
+  }
 
+  .portfolio__title{
+      text-align: center;
+  }
 
-
-
-
-
-
-
+  .gallery div > img{
+    width: 250px;
+    height: 150px;
+    margin: 10px;
+  }
+  
 
 
 
