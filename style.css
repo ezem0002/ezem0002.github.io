@@ -1,19 +1,176 @@
+@import url('reset.css');
+@import url('https://fonts.googleapis.com/css?family=Raleway|Roboto|Ubuntu&display=swap');
+
+
+/* DEFAULT MOBILE STYLES */
+
+/*******************
+    NAVIGATION
+********************/
+nav ul {
+    display: flex;
+    list-style-type: none;
+    flex-flow: wrap;
+    flex-direction: column;
+}
+nav ul{
+    align-items: center;
+}
+
+nav ul li{
+    padding: 5px;
+    margin-right: 30px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1em;
+}
+
+/* Logo */
+nav ul li:first-child{
+    /* align-self: center;
+    margin-right: auto;
+    padding: 0px; */
+}
+
+
+/* Styling the body */
+.body-container{
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+section{
+    background-color: burlywood;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    line-height: 1.5;
+
+}
+
+section h3{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bolder;
+    color: brown;
+}
+
+
+
+
+
+
+
+/* Footer styles */
+footer{
+    display: flex;
+    list-style-type: none;
+    flex-flow: wrap;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2c262a;
+    color: #f4f6f4;
+}
+footer p, footer ul{
+    padding: 3px;
+    margin: 0 10px 0 10px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1em;
+}
+
+footer ul{
+    text-align: center;
+}
+
+footer h3{
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+
+/* Tablet & Dektop Styles*/
+@media screen and (min-width: 600px){
+    
 
 /*******************
 
     NAVIGATION
 
 ********************/
-nav ul li{
+nav ul {
+    display: flex;
     list-style-type: none;
-    display: inline-block;
+    flex-flow: wrap;
 }
 
-nav ul li:first-child{
-    margin-right: auto;
-    width: 10px;
-    height: 30px;
+nav ul li{
+    padding: 5px;
+    margin-right: 30px;
 }
+
+
+/* Logo */
+nav ul li:first-child{
+    align-self: flex-start;
+    margin-right: auto;
+    padding: 0px;
+}
+
+
+/* Footer styles */
+footer{
+    display:flex;
+    flex-direction: row-reverse;
+    justify-items: center;
+}
+
+footer p{
+    margin-right: auto;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -169,4 +326,4 @@ input[type="checkbox"]{
   vertical-align: middle;
 }
   
-}
+} 
