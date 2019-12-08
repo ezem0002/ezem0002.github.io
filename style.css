@@ -1,0 +1,172 @@
+
+/*******************
+
+    NAVIGATION
+
+********************/
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+}
+
+nav ul li:first-child{
+    margin-right: auto;
+    width: 10px;
+    height: 30px;
+}
+
+
+
+/*******************
+
+    CONTACT FORM
+
+********************/
+
+*,
+:after,
+:before{
+  box-sizing: border-box;
+}
+
+.form-container{
+  max-width: 35rem;
+  border: 2px solid #000;
+  margin: 10px;
+  background-image: url("https://cdn.pixabay.com/photo/2017/10/18/16/08/wolf-2864647_960_720.jpg");
+  font-family: 'Varela Round', sans-serif;
+  font-size: 1rem;
+}
+
+label{
+    color: white;
+    font-weight: bold;
+  }
+
+.form-container form{
+  margin: 1rem;
+}
+
+label{
+  display: block;
+  margin: 15px 0 10px 0;
+}
+input{
+    height: 30px;
+}
+
+#nm, #em{
+  width: 80%;
+}
+
+textarea{
+  resize: none;
+  width: 90%;
+  height: 130px;
+}
+
+input[type="checkbox"]{
+  width:20px;
+  vertical-align: middle;
+}
+
+/****Tablet view*****/
+@media screen and (min-width: 35rem) and (max-width: 60rem){
+  
+  .form-container{
+          max-width: 60rem;
+          border: 1px solid #000;
+          padding: 20px;
+          margin: 10px;
+          background-image: url("https://cdn.pixabay.com/photo/2015/02/24/15/41/dog-647528_960_720.jpg");
+          font-family: 'Varela Round', sans-serif;
+          font-size: 1rem;
+        }
+  
+  label{
+    color: lightgreen;
+    font-weight: bold;
+  }
+
+.form-container form{
+        margin: 2rem;
+      }
+  
+  .form-container .name {
+        display: inline-block;
+        width: 100%;
+      }
+ 
+input{
+    height: 30px;
+}
+  
+  #nm, #em{
+  width: 50%;
+}
+
+textarea{
+    resize: none;
+    width: 65%;
+    height: 130px;
+  }
+
+input[type="checkbox"]{
+  width:20px;
+  vertical-align: middle;
+}
+}  
+
+/********Desktop View*********/
+@media screen and (min-width: 60rem){
+  
+  
+  body{
+    margin: 0 auto;
+  }
+  
+.form-container{
+  max-width: 100%;
+  border: 1px solid #000;
+  padding: 20px;
+  margin: 10px;
+  background-image: url("https://cdn.pixabay.com/photo/2017/09/25/13/12/dog-2785074_960_720.jpg");
+  font-family: 'Varela Round', sans-serif;
+  font-size: 1.5rem;
+}
+  
+  label{
+    color: darkred;
+    font-weight: bold;
+  }
+
+.form-container form{
+  margin: 0 3rem;
+  max-width: 80rem;  
+}
+  
+.name label{
+  display: block;
+  }
+  
+  .form-container .name {
+    display: inline-block;
+  }
+ 
+#nm, #em{
+  width: 100%;
+  margin-right:30px;
+}
+
+textarea{
+  resize: none;
+  width: 80%;
+  height: 140px;
+}
+
+input[type="checkbox"]{
+  width:30px;
+  vertical-align: middle;
+}
+  
+}
