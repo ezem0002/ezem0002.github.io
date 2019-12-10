@@ -24,5 +24,14 @@ I remembered i pushed my progress to github in my URL (https://ezem0002.github.i
 
 After all the trials, i found a way to some js plugins and bootstrap to achieve a little progress.
 
-link to bootstrp tutorial
+Bootsrap Plugin/Framework
 https://www.youtube.com/watch?v=9cKsq14Kfsw
+
+"https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+
+https://code.jquery.com/jquery-3.4.1.slim.min.js
+https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js
+https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js
+
+Google fonts =>> https://fonts.googleapis.com/css?family=Raleway|Roboto|Ubuntu&display=swap
+  
